@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#100d18"><title>Atika's Infinity Castle</title>
+<style>
+:root{--bg:#100d18;--panel:#1d1726;--pink:#e8c2ef;--muted:#c8b9d1;--gold:#d6b77a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#fff8ff;font-family:system-ui,-apple-system,Segoe UI,sans-serif}
+.hero{padding:38px 22px 30px;min-height:500px;background:linear-gradient(180deg,#0b0912a8,#100d18),url('https://demonslayer-anime.com/infinitycastle/assets_1st/img/common/bg.jpg') center/cover,radial-gradient(ellipse at 80% 10%,#75477d,#171321 65%);display:flex;flex-direction:column;justify-content:end}
+.kicker{letter-spacing:4px;text-transform:uppercase;color:#e8c2ef;font-size:11px;font-weight:800}
+h1{font:clamp(48px,12vw,84px)/.88 Georgia,serif;letter-spacing:1px;margin:18px 0}
+.hero p{max-width:540px;color:#e2d6e8;line-height:1.7;font-size:14px}
+.heroimg{width:100%;max-height:290px;object-fit:cover;object-position:center 25%;border-radius:18px;border:1px solid #ffffff35;margin-top:15px}
+.wrap{max-width:1100px;margin:auto;padding:28px 17px}.heading{font:32px Georgia,serif;margin:0 0 8px}.intro{color:var(--muted);font-size:13px;line-height:1.7}
+.filters{display:flex;gap:8px;overflow:auto;padding:17px 0}.filters button,.btn{border:1px solid #71547b;background:#241b2e;color:#fff;border-radius:30px;padding:10px 15px;white-space:nowrap;cursor:pointer}.filters button.active,.btn{background:var(--pink);color:#211429;border-color:var(--pink);font-weight:800}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{background:var(--panel);border:1px solid #ffffff17;border-radius:16px;overflow:hidden;transition:.22s}.card:hover{transform:translateY(-4px);border-color:#d6b1e5;box-shadow:0 12px 28px #0005}.card img{width:100%;height:190px;object-fit:cover;object-position:center top;display:block;background:linear-gradient(140deg,#34213f,#100d18)}.card .info{padding:12px}.card b{font:17px Georgia,serif}.card small{display:block;color:#d5b7df;margin-top:5px}.card .role{font-size:10px;color:#bcaec7}
+.feature{display:grid;grid-template-columns:1fr;gap:18px;align-items:center;background:linear-gradient(135deg,#2c1d37,#171321);padding:18px;border-radius:20px;margin-top:24px}.feature img{width:100%;height:240px;object-fit:cover;object-position:center 20%;border-radius:14px}.feature h3{font:28px Georgia,serif;margin:0}.feature p{color:var(--muted);font-size:13px;line-height:1.7}
+.timeline{border-left:2px solid #a77ab5;padding-left:19px;margin:22px 0}.event{position:relative;margin:0 0 20px}.event:before{content:"";position:absolute;left:-25px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--pink);box-shadow:0 0 12px #e8c2ef}.event b{display:block}.event small{color:var(--muted)}
+.quiz{background:linear-gradient(135deg,#2d2038,#191422);padding:20px;border:1px solid #87659566;border-radius:18px}.answers{display:grid;gap:9px;margin:15px 0}.answers button{background:#281f31;border:1px solid #74577e;color:#fff;padding:12px;border-radius:11px;text-align:left;cursor:pointer}.answers button.correct{background:#23513b}.answers button.wrong{background:#653143}
+footer{text-align:center;padding:25px;color:#c9b9d1;background:#09080e;font-size:12px}a{color:#ebc6f2}
+@media(min-width:650px){.wrap{padding:38px 28px}.grid{grid-template-columns:repeat(4,minmax(0,1fr))}.card img{height:230px}.feature{grid-template-columns:1.05fr .95fr}.hero{padding:50px max(6vw,25px)}}
+</style></head><body>
+<header class="hero"><div class="kicker">A little anime corner made by Atika</div><h1>INFINITY<br>CASTLE</h1><p>Welcome to my favourite corner of the Demon Slayer universe. Explore the characters, revisit the journey, and see how well you know the final battle.</p><img class="heroimg" src="https://demonslayer-anime.com/infinitycastle/assets_1st/img/chara/img_chara_tanjiro.jpg" alt="Tanjiro Kamado" onerror="this.style.display='none'"></header>
+<main>
+<section class="wrap"><h2 class="heading">The characters ✦</h2><p class="intro">Tap a category to explore the Demon Slayer Corps, the Hashira, and the demons. Character portraits are linked to the official Infinity Castle character page.</p>
+<div class="filters" id="filters"><button class="active" data-cat="All">Everyone</button><button data-cat="Corps">Demon Slayer Corps</button><button data-cat="Hashira">Hashira</button><button data-cat="Demons">Demons</button></div><div class="grid" id="grid"></div>
+<div class="feature"><img src="https://demonslayer-anime.com/infinitycastle/assets_1st/img/chara/img_chara_tanjiro.jpg" alt="Tanjiro Kamado" onerror="this.style.display='none'"><div><div class="kicker">Character spotlight</div><h3>Tanjiro Kamado</h3><p>Kind-hearted, determined, and always fighting for the people he loves. His journey is the heart of this story.</p><a href="https://demonslayer-anime.com/infinitycastle/character/?chara=tanjiro" target="_blank" rel="noopener">Meet Tanjiro on the official site ↗</a></div></div></section>
+<section class="wrap" style="background:#171321;max-width:none"><div style="max-width:1044px;margin:auto"><h2 class="heading">The journey so far</h2><p class="intro">A quick trip through the story before the Infinity Castle.</p><div class="timeline"><div class="event"><b>Unwavering Resolve</b><small>Tanjiro begins his journey and joins the Demon Slayer Corps.</small></div><div class="event"><b>Mugen Train</b><small>A memorable mission alongside the Flame Hashira.</small></div><div class="event"><b>Entertainment District</b><small>The Sound Hashira leads a dangerous mission.</small></div><div class="event"><b>Swordsmith Village</b><small>The Mist and Love Hashira step into the spotlight.</small></div><div class="event"><b>Hashira Training</b><small>The Corps prepares for what comes next.</small></div><div class="event"><b>Infinity Castle</b><small>The final confrontation begins inside the demons' stronghold.</small></div></div></div></section>
+<section class="wrap"><h2 class="heading">How well do you know them?</h2><p class="intro">A tiny quiz break. No pressure — just for fun!</p><div class="quiz"><small id="progress">Question 1 of 5</small><h3 id="question" style="font:24px Georgia,serif"></h3><div class="answers" id="answers"></div><p id="feedback" aria-live="polite"></p><button class="btn" id="next" hidden>Next question</button><b id="score"></b></div></section>
+</main><footer>Made with care, for Atika ✦<br><a href="https://demonslayer-anime.com/infinitycastle/character/" target="_blank" rel="noopener">Official character gallery</a></footer>
+<script>
+const base='https://demonslayer-anime.com/infinitycastle/assets_1st/img/chara/img_chara_';
+const characters=[
+['Tanjiro Kamado','Corps','Demon Slayer','tanjiro','tanjiro'],
+['Nezuko Kamado','Corps','Demon ally','nezuko','nezuko'],
+['Zenitsu Agatsuma','Corps','Thunder Breathing','zennitsu','zennitsu'],
+['Inosuke Hashibira','Corps','Beast Breathing','inosuke','inosuke'],
+['Kanao Tsuyuri','Corps','Tsuguko','kanowo','kanowo'],
+['Genya Shinazugawa','Corps','Demon Slayer','gennya','gennya'],
+['Giyu Tomioka','Hashira','Water Hashira','giyu','giyu'],
+['Muichiro Tokito','Hashira','Mist Hashira','muichiro','muichiro'],
+['Shinobu Kocho','Hashira','Insect Hashira','shinobu','shinobu'],
+['Mitsuri Kanroji','Hashira','Love Hashira','mitsuri','mitsuri'],
+['Obanai Iguro','Hashira','Serpent Hashira','obanai','obanai'],
+['Sanemi Shinazugawa','Hashira','Wind Hashira','sanemi','sanemi'],
+['Gyomei Himejima','Hashira','Stone Hashira','himejima','himejima'],
+['Tengen Uzui','Hashira','Former Sound Hashira','uzui','uzui'],
+['Kasugai Crow','Corps','Messenger crow','karasu','karasu'],
+['Muzan Kibutsuji','Demons','Demon progenitor','muzan','muzan'],
+['Kokushibo','Demons','Upper One','kokushibo','kokushibo'],
+['Doma','Demons','Upper Two','douma','douma'],
+['Akaza','Demons','Upper Three','akaza','akaza'],
+['Nakime','Demons','Upper Four','nakime','nakime'],
+['Kaigaku','Demons','Upper Six','kaigaku','kaigaku']
+];
+const grid=document.getElementById('grid');
+function render(cat='All'){grid.innerHTML='';characters.filter(c=>cat==='All'||c[1]===cat).forEach(c=>{const card=document.createElement('article');card.className='card';const img=document.createElement('img');img.src=base+c[3]+'.jpg';img.alt=c[0];img.loading='lazy';img.onerror=()=>{img.onerror=null;img.src=base+c[3]+'.png';img.onerror=()=>{card.remove()}};const info=document.createElement('div');info.className='info';const name=document.createElement('b');name.textContent=c[0];const role=document.createElement('small');role.textContent=c[2];const tag=document.createElement('div');tag.className='role';tag.textContent=c[1];info.append(name,role,tag);card.append(img,info);grid.append(card)})}
+document.querySelectorAll('[data-cat]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-cat]').forEach(x=>x.classList.remove('active'));b.classList.add('active');render(b.dataset.cat)}));render();
+const quiz=[['Who is the Water Hashira?',['Giyu Tomioka','Tengen Uzui','Sanemi Shinazugawa'],0],['Who uses Thunder Breathing?',['Inosuke','Zenitsu','Genya'],1],['Who is Upper One?',['Akaza','Kokushibo','Doma'],1],['Who is Tanjiro’s sister?',['Kanao','Nezuko','Mitsuri'],1],['Who controls the Infinity Castle?',['Nakime','Shinobu','Muichiro'],0]];
+let qi=0,score=0,locked=false;const q=document.getElementById('question'),ans=document.getElementById('answers'),fb=document.getElementById('feedback'),next=document.getElementById('next');
+function show(){locked=false;document.getElementById('progress').textContent=`Question ${qi+1} of ${quiz.length}`;q.textContent=quiz[qi][0];ans.innerHTML='';fb.textContent='';next.hidden=true;quiz[qi][1].forEach((v,n)=>{const b=document.createElement('button');b.textContent=v;b.onclick=()=>choose(n,b);ans.append(b)})}
+function choose(n,b){if(locked)return;locked=true;const right=quiz[qi][2],buttons=ans.querySelectorAll('button');buttons[right].classList.add('correct');if(n===right){score++;fb.textContent='Correct! You know your Demon Slayer facts ✨'}else{b.classList.add('wrong');fb.textContent='The correct answer is '+quiz[qi][1][right]+'.'}buttons.forEach(x=>x.disabled=true);document.getElementById('score').textContent='Score: '+score+'/'+quiz.length;next.textContent=qi===quiz.length-1?'See my result':'Next question';next.hidden=false}
+next.onclick=()=>{if(qi<quiz.length-1){qi++;show()}else{q.textContent=`You scored ${score} out of ${quiz.length}!`;ans.innerHTML='';fb.textContent=score===5?'Perfect score — Hashira-level knowledge!':'Thanks for playing. Have another go if you like!';next.textContent='Play again';next.onclick=()=>{qi=0;score=0;document.getElementById('score').textContent='';show()}}};show();
+</script></body></html>
